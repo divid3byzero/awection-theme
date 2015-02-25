@@ -1,8 +1,19 @@
+@import "fonts.css";
 @import "font-awesome.min.css";
 
 .font {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-family: TextFont, sans-serif !important;
     font-size: 14px !important;
+}
+
+.subheadline {
+    font-family: SubHeadline, sans-serif;
+    font-size: large;
+}
+
+.mainheadline {
+    font-family: MainHeadline, sans-serif;
+    font-size: 40px;
 }
 
 li .portlet-body form {
@@ -13,34 +24,67 @@ li .portlet-borderless-container {
     min-height: 0;
 }
 
-nav li.login-link {
-    margin-top: 9px;
-}
-
-nav li.login-link {
-
-}
-
 .aui body {
-    background: #f7f7f7;
+    background: url("../img/wavegrid.png") repeat;
 }
 
-i#logo-icon {
+.nav-wrapper {
+    position: fixed;
+    width: 100%;
+    background: #474747;
+    opacity: .9;
+    z-index: 9999;
+}
+
+.nav-wrapper > div:first-child {
+    width: 1255px;
+    margin: auto;
+}
+
+.nav-wrapper ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-wrapper ul li {
+    position: relative;
+    display: table;
+    float: left;
+    height: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-wrapper ul li:hover {
+    background: #c7d21f;
+}
+
+.nav-wrapper ul li a {
+    display: table-cell;
+    vertical-align: middle;
+    width: 130px;
+    height: 50px;
+    font-family: SubHeadline, sans-serif;
+    text-decoration: none !important;
     color: #c7d21f;
-    margin-right: 20px;
-    margin-top: 5px;
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+.nav-wrapper ul li a:hover {
+    color: #ffffff;
+}
+
+#banner {
+    margin-top: 50px;
 }
 
 .auc-title {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #474747;
-    margin-bottom: 20px;
-}
-
-nav {
-    margin-bottom: 35px;
+    float: right;
+    font-family: MainHeadline, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #c7d21f;
+    margin-top: 12px;
 }
 
 header#banner > div.auc-title + nav.navbar.navbar-default {
@@ -57,4 +101,9 @@ header#banner > div.auc-title + nav.navbar.navbar-default {
     padding: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.content > span.subheadline:first-child {
+    display: inline-block;
+    margin-bottom: 10px;
 }

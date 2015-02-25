@@ -1,0 +1,12 @@
+@font-face {
+    font-family: MainHeadline;
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+    font-family: SubHeadline;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: TextFont;
+    src: url("../fonts/OpenSans-Light.ttf");
+}

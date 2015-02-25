@@ -21,13 +21,12 @@
     #if ($is_signed_in && $permissionChecker.isCompanyAdmin($company_id))
         #dockbar()
     #end
+    #parse ("$full_templates_path/navigation.vm")
 
 <div class="container-fluid" id="wrapper">
     <header id="banner" role="banner">
-        <div class="auc-title">Awection</div>
-        #parse ("$full_templates_path/navigation.vm")
-    </header>
 
+    </header>
 
     #if ($selectable)
         $theme.include($content_include)

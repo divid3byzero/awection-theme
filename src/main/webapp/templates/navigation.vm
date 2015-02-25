@@ -1,23 +1,27 @@
-<nav>
-    <ul class="aui nav nav-tabs">
-        <li><a href="$home_url">Home</a></li>
-        #foreach ($nav_item in $nav_items)
-            <li>
-                <a href="$nav_item.getURL()">$nav_item.getName()</a>
-            </li>
-        #end
-        #if (!$is_signed_in)
-            <li class="login-link">
-                #set($portletId = "auctionfrontendlogin_WAR_auctionfrontenduser_INSTANCE_KJ5T")
+<nav class="nav-wrapper">
+    <div class="clearfix">
+        <ul>
+            <li><a href="$home_url">Home</a></li>
+            #foreach ($nav_item in $nav_items)
+                <li>
+                    <a href="$nav_item.getURL()">$nav_item.getName()</a>
+                </li>
+            #end
+            #if (!$is_signed_in)
+                <li class="login-link-wrapper">
+                    #set($portletId = "auctionfrontendlogin_WAR_auctionfrontenduser_INSTANCE_KJ5T")
                 #set ($VOID = $velocityPortletPreferences.setValue("display-style", "1"))
-                #set ($VOID = $velocityPortletPreferences.setValue("portlet-setup-show-borders", "false"))
+                #set ($VOID = $velocityPortletPreferences.setValue(
+                    "portlet-setup-show-borders", "false"))
                 $theme.runtime($portletId, "", $velocityPortletPreferences.toString())
                 #set($void = $velocityPortletPreferences.reset())
-            </li>
-        #else
-            <li>
-                <a href="$sign_out_url">Logout</a>
-            </li>
-        #end
-    </ul>
+                </li>
+            #else
+                <li>
+                    <a href="$sign_out_url">Logout</a>
+                </li>
+            #end
+        </ul>
+        <div class="auc-title">Awection</div>
+    </div>
 </nav>
