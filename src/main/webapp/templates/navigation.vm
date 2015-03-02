@@ -9,7 +9,7 @@
             #end
             #if (!$is_signed_in)
                 <li class="login-link-wrapper">
-                    #set($portletId = "auctionfrontendlogin_WAR_auctionfrontenduser_INSTANCE_KJ5T")
+                    #set($portletId = "auctionlogin_WAR_auction_INSTANCE_KJ5T")
                 #set ($VOID = $velocityPortletPreferences.setValue("display-style", "1"))
                 #set ($VOID = $velocityPortletPreferences.setValue(
                     "portlet-setup-show-borders", "false"))

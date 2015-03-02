@@ -3,7 +3,13 @@
 
 .font {
     font-family: TextFont, sans-serif !important;
-    font-size: 14px !important;
+    font-size: 12px !important;
+}
+
+.font-bold {
+    font-family: TextFont, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: bold;
 }
 
 .subheadline {
@@ -26,6 +32,10 @@ li .portlet-borderless-container {
 
 .aui body {
     background: url("../img/wavegrid.png") repeat;
+}
+
+.aui .dockbar {
+    z-index: 10000;
 }
 
 .nav-wrapper {
