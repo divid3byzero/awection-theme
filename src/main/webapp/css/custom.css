@@ -13,8 +13,10 @@
 }
 
 .subheadline {
+    display: inline-block;
     font-family: SubHeadline, sans-serif;
     font-size: large;
+    margin-bottom: 10px;
 }
 
 .mainheadline {
