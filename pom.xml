@@ -11,7 +11,7 @@
 		<liferay.version>6.2.1</liferay.version>
 		<liferay.theme.parent>_styled</liferay.theme.parent>
 		<liferay.theme.type>vm</liferay.theme.type>
-		<liferay.auto.deploy.dir>${env.LRAY_PRA_HOME}/deploy</liferay.auto.deploy.dir>
+		<liferay.auto.deploy.dir>${env.LRAY_HOME}/deploy</liferay.auto.deploy.dir>
 	</properties>
 	<build>
 		<plugins>
