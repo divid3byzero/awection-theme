@@ -1,6 +1,6 @@
 <nav class="nav-wrapper">
-    <div class="clearfix">
-        <ul>
+    <div class="clearfix container-fluid">
+        <ul class="clearfix">
             <li><a href="$home_url">Home</a></li>
             #foreach ($nav_item in $nav_items)
                 <li>
@@ -20,6 +20,7 @@
                 <li>
                     <a href="$sign_out_url">Logout</a>
                 </li>
+
             #end
         </ul>
         <div class="auc-title">Awection</div>

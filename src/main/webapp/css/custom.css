@@ -46,14 +46,14 @@ li .portlet-borderless-container {
     background: #474747;
     opacity: .9;
     z-index: 9999;
+    padding-left: 5em;
 }
 
 .nav-wrapper > div:first-child {
-    width: 1255px;
-    margin: auto;
 }
 
 .nav-wrapper ul {
+    float: left;
     padding: 0;
     margin: 0;
 }
@@ -65,6 +65,14 @@ li .portlet-borderless-container {
     height: 50px;
     list-style-type: none;
     text-align: center;
+}
+
+.nav-wrapper ul li:first-child {
+    border-left: thin solid #c7d21f;
+}
+
+.nav-wrapper ul li:last-child {
+    border-right: thin solid #c7d21f;
 }
 
 .nav-wrapper ul li:hover {
@@ -87,6 +95,10 @@ li .portlet-borderless-container {
     color: #ffffff;
 }
 
+.nav-wrapper > div.container-fluid.clearfix {
+    padding-left: 0;
+}
+
 #banner {
     margin-top: 50px;
 }
@@ -97,6 +109,7 @@ li .portlet-borderless-container {
     font-size: 40px;
     color: #c7d21f;
     margin-top: 12px;
+    margin-right: 117px;
 }
 
 header#banner > div.auc-title + nav.navbar.navbar-default {
