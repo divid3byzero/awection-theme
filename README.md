@@ -1,6 +1,5 @@
 # Awection Theme
-Simple Liferay Portal container theme to create the correct look and feel for a corresponding Portlet project. This project
-is available under [Awection Portlets](https://github.com/divid3byzero/awection).
+Simple Liferay Portal theme to create the correct look and feel for the corresponding [Awection Portlets](https://github.com/divid3byzero/awection) Portlet project. Auction Theme assumes the use of [Awection Portlets](https://github.com/divid3byzero/awection) but does not require it.
 
 **Note:** The theme is to be used in conjunction with Liferay 6.2 GA 3 bundled with a Apache Tomcat server. It will **probably** also work using the Glassfish or JBoss bundle, but this has **not** been tested and is therefore not advised. The correct version can be downloaded from [here](http://sourceforge.net/projects/lportal/files/?source=navbar). If you've never used Liferay before, I suggest you read the according documentation [here](http://www.liferay.com/documentation/liferay-portal/6.2/user-guide).
 
